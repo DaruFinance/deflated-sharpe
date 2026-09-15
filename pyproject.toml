@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deflated-sharpe"
+version = "0.1.0"
+description = "Deflated Sharpe Ratio, Probabilistic Sharpe Ratio, minimum track record and minimum backtest length, with no dependencies."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Daniel Gatto", email = "daniel@daru.finance" }]
+keywords = ["sharpe-ratio", "deflated-sharpe-ratio", "probabilistic-sharpe-ratio", "backtest-overfitting", "multiple-testing", "quantitative-finance"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+dsr = "deflated_sharpe.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/DaruFinance/deflated-sharpe"
+Documentation = "https://github.com/DaruFinance/deflated-sharpe/tree/main/docs"
+Issues = "https://github.com/DaruFinance/deflated-sharpe/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+deflated_sharpe = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "src"]
+addopts = "--doctest-modules --import-mode=importlib"

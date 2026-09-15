@@ -1,0 +1,15 @@
+{
+  "title": "deflated-sharpe: Deflated and Probabilistic Sharpe Ratio in Python",
+  "description": "A dependency-free Python implementation of the Deflated Sharpe Ratio, the Probabilistic Sharpe Ratio, the minimum track record length and the minimum backtest length of Bailey and López de Prado, validated against every numerical example in the source papers.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {"name": "Gatto, Daniel V."}
+  ],
+  "keywords": ["deflated sharpe ratio", "probabilistic sharpe ratio", "backtest overfitting", "multiple testing", "quantitative finance"],
+  "related_identifiers": [
+    {"identifier": "10.3905/jpm.2014.40.5.094", "relation": "isSupplementTo", "scheme": "doi"},
+    {"identifier": "10.21314/JOR.2012.255", "relation": "isSupplementTo", "scheme": "doi"},
+    {"identifier": "10.1090/noti1105", "relation": "isSupplementTo", "scheme": "doi"}
+  ]
+}

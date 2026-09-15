@@ -1,0 +1,69 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, together with the papers whose methods it implements."
+title: "deflated-sharpe: Deflated and Probabilistic Sharpe Ratio in Python"
+abstract: "A dependency-free Python implementation of the Deflated Sharpe Ratio, the Probabilistic Sharpe Ratio, the minimum track record length and the minimum backtest length, validated against every numerical example in the source papers."
+type: software
+authors:
+  - family-names: Gatto
+    given-names: Daniel V.
+    email: daniel@daru.finance
+    website: "https://daru.finance"
+version: 0.1.0
+date-released: "2026-09-15"
+license: MIT
+repository-code: "https://github.com/DaruFinance/deflated-sharpe"
+url: "https://github.com/DaruFinance/deflated-sharpe"
+keywords:
+  - deflated sharpe ratio
+  - probabilistic sharpe ratio
+  - backtest overfitting
+  - multiple testing
+  - selection bias
+  - quantitative finance
+references:
+  - type: article
+    authors:
+      - family-names: Bailey
+        given-names: David H.
+      - family-names: "López de Prado"
+        given-names: Marcos
+    title: "The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting and Non-Normality"
+    journal: "Journal of Portfolio Management"
+    volume: 40
+    issue: 5
+    start: 94
+    end: 107
+    year: 2014
+    doi: "10.3905/jpm.2014.40.5.094"
+  - type: article
+    authors:
+      - family-names: Bailey
+        given-names: David H.
+      - family-names: "López de Prado"
+        given-names: Marcos
+    title: "The Sharpe Ratio Efficient Frontier"
+    journal: "Journal of Risk"
+    volume: 15
+    issue: 2
+    start: 3
+    end: 44
+    year: 2012
+    doi: "10.21314/JOR.2012.255"
+  - type: article
+    authors:
+      - family-names: Bailey
+        given-names: David H.
+      - family-names: Borwein
+        given-names: Jonathan M.
+      - family-names: "López de Prado"
+        given-names: Marcos
+      - family-names: Zhu
+        given-names: Qiji Jim
+    title: "Pseudo-Mathematics and Financial Charlatanism: The Effects of Backtest Overfitting on Out-of-Sample Performance"
+    journal: "Notices of the American Mathematical Society"
+    volume: 61
+    issue: 5
+    start: 458
+    end: 471
+    year: 2014
+    doi: "10.1090/noti1105"
